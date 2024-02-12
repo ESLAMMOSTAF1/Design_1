@@ -1,0 +1,805 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: auto;
+    background-size: cover;
+    background-color: #eee;
+}
+
+.parent {
+    position: relative;
+}
+
+.parent .child h1 {
+    position: absolute;
+    font-size: 50px;
+    top: 205px;
+    left: 50px;
+}
+
+.parent .child h4 {
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    font-size: 30px;
+    color: blue;
+    border-right: 2px solid hotpink;
+    border-left: 2px solid blue;
+}
+
+.parent .child h4::before {
+    content: "";
+    position: absolute;
+    bottom: 34px;
+    left: -2px;
+    width: 20px;
+    background-color: red;
+    height: 2px;
+    background-image: linear-gradient(to bottom, blue, blue 20%);
+}
+
+.parent .child h4::after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 72px;
+    width: 20px;
+    background-color: red;
+    height: 2px;
+    background-image: linear-gradient(to top, hotpink, hotpink 20%);
+}
+
+.parent .child h4::first-letter {
+    color: hotpink;
+}
+
+.parent .child b {
+    color: hotpink;
+}
+
+.parent .child p {
+    position: absolute;
+    font-size: 20px;
+    top: 286px;
+    left: 50px
+}
+
+.parent .button_one {
+    position: absolute;
+    top: 350px;
+    left: 55px;
+
+}
+
+.button_one button {
+    padding: 17px;
+    border-radius: 60px;
+    color: white;
+    width: 195px;
+    background-color: hotpink;
+    text-align: center;
+    border: 0 solid transparent;
+}
+
+.parent .button {
+    position: absolute;
+    left: 1050px;
+    top: 30px;
+}
+
+.button button {
+    padding: 13px;
+    border-radius: 50px;
+    color: white;
+    background-color: hotpink;
+    width: 125px;
+    text-align: center;
+    border: 0 solid transparent;
+}
+
+.parent .child_one {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: flex;
+    outline: 0;
+    position: absolute;
+    top: -25px;
+    left: 230px;
+}
+
+.child_one {
+    position: relative;
+}
+
+.child_one .one {
+    display: flex;
+    background-color: transparent;
+    margin: -30px;
+    padding: 20px;
+    font-size: 25px;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+}
+
+.one a {
+    color: black;
+    text-decoration: none;
+}
+
+.child_one .two {
+    display: flex;
+    background-color: transparent;
+    margin: -30px;
+    padding: 20px;
+    font-size: 25px;
+    position: absolute;
+    top: 65px;
+    left: 130px;
+}
+
+.two a {
+    color: black;
+    text-decoration: none;
+}
+
+.child_one .three {
+    display: flex;
+    background-color: transparent;
+    margin: -30px;
+    padding: 20px;
+    font-size: 25px;
+    position: absolute;
+    top: 65px;
+    left: 260px;
+}
+
+.three a {
+    color: black;
+    text-decoration: none;
+}
+
+.child_one .four {
+    display: flex;
+    background-color: transparent;
+    margin: -30px;
+    padding: 20px;
+    font-size: 25px;
+    position: absolute;
+    top: 65px;
+    left: 400px;
+}
+
+.four a {
+    color: black;
+    text-decoration: none;
+}
+
+.child_one .five {
+    display: flex;
+    background-color: transparent;
+    margin: -30px;
+    padding: 20px;
+    font-size: 25px;
+    position: absolute;
+    top: 65px;
+    left: 550px;
+}
+
+.five a {
+    color: black;
+    text-decoration: none;
+}
+
+.parent .feat {
+    position: absolute;
+    left: 1250px;
+    top: 250px;
+    font-size: 45px;
+}
+
+.feat i {
+    background-color: white;
+    width: 70px;
+    border: 2px solid hotpink;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+}
+
+.parent .feat_one {
+    position: absolute;
+    left: 1250px;
+    top: 325px;
+    font-size: 45px;
+}
+
+.feat_one i {
+    background-color: white;
+    width: 70px;
+    border: 2px solid hotpink;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.parent .feat_two {
+    position: absolute;
+    left: 1250px;
+    top: 400px;
+    font-size: 45px;
+}
+
+.feat_two i {
+    background-color: white;
+    width: 70px;
+    border: 2px solid hotpink;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: royalblue;
+}
+
+@media only screen and (max-width:350px) {
+    body {
+        background-size: cover;
+        width: 620px !important;
+        height: auto;
+    }
+
+    .parent .child h1 {
+        font-size: 70px;
+        position: absolute;
+        top: 155px;
+        left: 90px
+    }
+
+    .parent .child p {
+        font-size: 45px;
+        position: absolute;
+        top: 245px;
+        left: 90px;
+    }
+
+    .button button {
+        padding: 8px !important;
+        border-radius: 25px !important;
+        width: 203px !important;
+        font-size: 30px;
+    }
+
+    .button_one button {
+        padding: 20px !important;
+        border-radius: 25px !important;
+        width: 320px !important;
+        font-size: 35px;
+    }
+
+    .parent .button_one {
+        position: absolute;
+        top: 515px;
+        left: 80px;
+    }
+
+    .child_one .one {
+        font-size: 45px;
+        position: absolute;
+        left: 35px;
+    }
+
+    .child_one .two {
+        font-size: 45px;
+        position: absolute;
+        left: 170px;
+    }
+
+    .child_one .three {
+        font-size: 45px;
+        position: absolute;
+        left: 310px;
+    }
+
+    .child_one .four {
+        font-size: 45px;
+        position: absolute;
+        left: 465px;
+    }
+
+    .child_one .five {
+        font-size: 45px;
+        position: absolute;
+        left: 650px;
+    }
+
+    .parent .child h4 {
+        left: 80px;
+        top: -37px;
+        font-size: 50px;
+    }
+
+    .parent .child h4 {
+        border-left: 4px solid blue;
+        border-right: 4px solid hotpink;
+    }
+
+    .parent .child h4::before {
+        content: "";
+        bottom: 58px;
+        left: -4px;
+        height: 3px;
+        width: 25px;
+    }
+
+    .parent .child h4::after {
+        content: "";
+        top: 58px;
+        left: 129px;
+        height: 3px;
+        width: 25px;
+    }
+
+    .parent .feat_one {
+        position: absolute;
+        left: 1185px;
+    }
+
+    .parent .feat_two {
+        position: absolute;
+        left: 1185px;
+    }
+
+    .parent .feat {
+        position: absolute;
+        left: 1185px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        background-size: cover;
+        width: 390px !important;
+        height: auto;
+    }
+
+    .parent .child h1 {
+        font-size: 50px;
+        position: absolute;
+    }
+
+    .parent .child p {
+        font-size: 50px;
+        position: absolute;
+        top: 260px;
+    }
+
+    .button_one button {
+        padding: 20px !important;
+        border-radius: 25px !important;
+        width: 381px !important;
+        position: absolute;
+        top: 444px;
+        font-size: 45px;
+    }
+
+    .child_one .one {
+        font-size: 45px;
+        position: absolute;
+        left: 35px;
+    }
+
+    .child_one .two {
+        font-size: 45px;
+        position: absolute;
+        left: 170px;
+    }
+
+    .child_one .three {
+        font-size: 45px;
+        position: absolute;
+        left: 310px;
+    }
+
+    .child_one .four {
+        font-size: 45px;
+        position: absolute;
+        left: 465px;
+    }
+
+    .child_one .five {
+        font-size: 45px;
+        position: absolute;
+        left: 650px;
+    }
+
+    .parent .child h4 {
+        border-left: 4px solid blue;
+        border-right: 4px solid hotpink;
+        font-size: 55px;
+        position: absolute;
+        top: -45px;
+        left: 40px;
+    }
+
+    .parent .child h4::before {
+        content: "";
+        bottom: 62px;
+        left: -4px;
+        height: 3px;
+        width: 25px;
+    }
+
+    .parent .child h4::after {
+        content: "";
+        top: 61px;
+        left: 143px;
+        height: 3px;
+        width: 25px;
+    }
+
+    .button button {
+        padding: 8px !important;
+        border-radius: 25px !important;
+        width: 203px !important;
+        font-size: 30px;
+    }
+
+    .parent .feat_one {
+        position: absolute;
+        left: 1160px;
+    }
+
+    .parent .feat_two {
+        position: absolute;
+        left: 1160px;
+    }
+
+    .parent .feat {
+        position: absolute;
+        left: 1160px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+        height: auto;
+        width: 740px !important;
+    }
+
+    .parent .child h1 {
+        font-size: 85px;
+        position: absolute;
+        top: 100px;
+    }
+
+    .parent .child p {
+        font-size: 61px;
+        position: absolute;
+        top: 206px;
+    }
+
+    .button_one button {
+        padding: 20px !important;
+        border-radius: 25px !important;
+        width: 381px !important;
+        position: absolute;
+        top: 205px;
+        font-size: 45px;
+    }
+
+
+    .child_one .one {
+        font-size: 50px;
+        position: absolute;
+        left: 25px;
+    }
+
+    .child_one .two {
+        font-size: 50px;
+        position: absolute;
+        left: 170px;
+    }
+
+    .child_one .three {
+        font-size: 50px;
+        position: absolute;
+        left: 320px;
+    }
+
+    .child_one .four {
+        font-size: 50px;
+        position: absolute;
+        left: 485px;
+    }
+
+    .child_one .five {
+        font-size: 50px;
+        position: absolute;
+        left: 685px;
+    }
+
+    .parent .button {
+        left: 1090px !important;
+    }
+
+    .button button {
+        padding: 8px !important;
+        border-radius: 25px !important;
+        width: 203px !important;
+        font-size: 30px;
+    }
+
+    .parent .child h4 {
+        border-left: 4px solid blue;
+        border-right: 4px solid hotpink;
+        font-size: 55px;
+        position: absolute;
+        top: -45px;
+        left: 40px;
+    }
+
+    .parent .child h4::before {
+        content: "";
+        bottom: 62px;
+        left: -4px;
+        height: 3px;
+        width: 25px;
+    }
+
+    .parent .child h4::after {
+        content: "";
+        top: 61px;
+        left: 143px;
+        height: 3px;
+        width: 25px;
+    }
+
+    .parent .feat_one {
+        position: absolute;
+        left: 1200px;
+    }
+
+    .parent .feat_two {
+        position: absolute;
+        left: 1200px;
+    }
+
+    .parent .feat {
+        position: absolute;
+        left: 1200px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    body {
+        background-size: cover;
+        height: auto;
+        width: 1170px !important;
+    }
+
+    .parent .child h1 {
+        font-size: 85px;
+        position: absolute;
+        top: 100px;
+    }
+
+    .parent .child p {
+        font-size: 61px;
+        position: absolute;
+        top: 206px;
+    }
+
+    .button_one button {
+        padding: 15px !important;
+        border-radius: 25px !important;
+        width: 335px !important;
+        position: absolute;
+        top: 155px;
+        font-size: 40px;
+    }
+
+    .child_one .one {
+        font-size: 45px;
+        position: absolute;
+        left: 25px;
+    }
+
+    .child_one .two {
+        font-size: 45px;
+        position: absolute;
+        left: 170px;
+    }
+
+    .child_one .three {
+        font-size: 45px;
+        position: absolute;
+        left: 320px;
+    }
+
+    .child_one .four {
+        font-size: 45px;
+        position: absolute;
+        left: 485px;
+    }
+
+    .child_one .five {
+        font-size: 45px;
+        position: absolute;
+        left: 685px;
+    }
+
+    .parent .button {
+        left: 1065px !important;
+    }
+
+    .button button {
+        padding: 8px !important;
+        border-radius: 25px !important;
+        width: 203px !important;
+        font-size: 30px;
+    }
+
+    .parent .child h4 {
+        border-left: 4px solid blue;
+        border-right: 4px solid hotpink;
+        font-size: 55px;
+        position: absolute;
+        top: -45px;
+        left: 40px;
+    }
+
+    .parent .child h4::before {
+        content: "";
+        bottom: 62px;
+        left: -4px;
+        height: 3px;
+        width: 25px;
+    }
+
+    .parent .child h4::after {
+        content: "";
+        top: 61px;
+        left: 143px;
+        height: 3px;
+        width: 25px;
+    }
+
+    .parent .feat_one {
+        position: absolute;
+        left: 1185px;
+    }
+
+    .parent .feat_two {
+        position: absolute;
+        left: 1185px;
+    }
+
+    .parent .feat {
+        position: absolute;
+        left: 1185px;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    body {
+        background-size: cover;
+        height: auto;
+        width: 1250px !important;
+    }
+
+    .parent .child h1 {
+        font-size: 85px;
+        position: absolute;
+        top: 100px;
+    }
+
+    .parent .child p {
+        font-size: 61px;
+        position: absolute;
+        top: 206px;
+    }
+
+    .button_one button {
+        padding: 10px !important;
+        border-radius: 25px !important;
+        width: 285px !important;
+        position: absolute;
+        top: 155px;
+        font-size: 35px;
+    }
+
+    .child_one .one {
+        font-size: 40px;
+        position: absolute;
+        left: 25px;
+    }
+
+    .child_one .two {
+        font-size: 40px;
+        position: absolute;
+        left: 170px;
+    }
+
+    .child_one .three {
+        font-size: 40px;
+        position: absolute;
+        left: 320px;
+    }
+
+    .child_one .four {
+        font-size: 40px;
+        position: absolute;
+        left: 485px;
+    }
+
+    .child_one .five {
+        font-size: 40px;
+        position: absolute;
+        left: 685px;
+    }
+
+    .parent .button {
+        left: 1065px !important;
+    }
+
+    .button button {
+        padding: 8px !important;
+        border-radius: 25px !important;
+        width: 203px !important;
+        font-size: 30px;
+    }
+
+    .parent .child h4 {
+        border-left: 4px solid blue;
+        border-right: 4px solid hotpink;
+        font-size: 55px;
+        position: absolute;
+        top: -45px;
+        left: 40px;
+    }
+
+    .parent .child h4::before {
+        content: "";
+        bottom: 62px;
+        left: -4px;
+        height: 3px;
+        width: 25px;
+    }
+
+    .parent .child h4::after {
+        content: "";
+        top: 61px;
+        left: 143px;
+        height: 3px;
+        width: 25px;
+    }
+
+    .parent .feat_one {
+        position: absolute;
+        left: 1185px;
+    }
+
+    .parent .feat_two {
+        position: absolute;
+        left: 1185px;
+    }
+
+    .parent .feat {
+        position: absolute;
+        left: 1185px;
+    }
+}
